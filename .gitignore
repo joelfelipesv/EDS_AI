@@ -1,0 +1,29 @@
+# Ignorar archivos generados y datos pesados
+
+# Ambientes virtuales y caches de Python
+venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# IDEs
+.idea/
+.vscode/
+
+# Datos brutos (RAW)
+data/raw/*.msa
+data/raw/*.emsa
+
+# Datos procesados y modelos pesados
+data/processed/*.npy
+data/processed/*.csv
+models/*.pt
+models/*.pth
+
+# Documentación y resultados intermedios que no deben versionarse
+notebooks/*.ipynb_checkpoints/
+reports/*.png
+*.log
+*~

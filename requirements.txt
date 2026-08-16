@@ -1,0 +1,18 @@
+# Deep Learning y Computacion Numerica
+torch>=2.0
+numpy>=1.24
+
+# Analisis de Datos y Machine Learning
+pandas>=2.0
+scikit-learn>=1.3
+scipy>=1.10
+
+# Visualizacion
+matplotlib>=3.7
+
+# Utilidades
+tqdm>=4.65
+h5py>=3.8
+
+# Entorno interactivo (notebooks)
+jupyter>=1.0
