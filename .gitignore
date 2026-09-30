@@ -1,29 +1,35 @@
-# Ignorar archivos generados y datos pesados
-
-# Ambientes virtuales y caches de Python
+# Entorno virtual
 venv/
-.env
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
 .pytest_cache/
-.mypy_cache/
 
-# IDEs
-.idea/
-.vscode/
+# Jupyter
+.ipynb_checkpoints/
 
-# Datos brutos (RAW)
-data/raw/*.msa
-data/raw/*.emsa
-
-# Datos procesados y modelos pesados
-data/processed/*.npy
-data/processed/*.csv
-models/*.pt
-models/*.pth
-
-# Documentación y resultados intermedios que no deben versionarse
-notebooks/*.ipynb_checkpoints/
-reports/*.png
-*.log
+# Temporales
 *~
+*.swp
+*.log
+estructura.txt
+
+# Datos crudos y procesados (regenerables por pipeline)
+data/raw/*.csv
+data/processed/**/*.npy
+data/processed/**/*.csv
+
+# Modelos y reportes: NO ignorar (son evidencia, pesan <1 MB)
+# models/*.pkl
+# models/*.pth
+# reports/*.png
+
+# JARs locales (si se descargan)
+*.jar
+
+# Sistema
+.DS_Store
+Thumbs.db
+
