@@ -54,11 +54,14 @@ class SpectraDataset(Dataset):
             self.labels = []
             for fp in self.file_paths:
                 stem = fp.stem  # nombre sin extension
-                if stem not in labels_map:
+                # Las realizaciones Poisson usan ``C__r01.npy`` etc.; todas
+                # conservan la etiqueta canónica previa al separador ``__``.
+                canonical_stem = stem.split("__", 1)[0]
+                if canonical_stem not in labels_map:
                     raise KeyError(
                         f"Archivo '{stem}.npy' no tiene label definido en labels_map"
                     )
-                self.labels.append(labels_map[stem])
+                self.labels.append(labels_map[canonical_stem])
 
         self.num_samples = len(self.file_paths)
 
