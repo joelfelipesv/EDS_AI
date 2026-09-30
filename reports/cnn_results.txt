@@ -1,0 +1,394 @@
+PyTorch: 2.14.0+cpu
+Dispositivo: cpu
+
+============================================================================
+CNN 1D — LOW (60 espectros; train=48, val=6, test=6, escala_entrada=4096)
+============================================================================
+época 001: train_loss=1.753434 val_loss=1.774910 val_acc=0.1667
+época 002: train_loss=1.681938 val_loss=1.754095 val_acc=0.1667
+época 003: train_loss=1.634095 val_loss=1.733339 val_acc=0.1667
+época 004: train_loss=1.592888 val_loss=1.711711 val_acc=0.1667
+época 005: train_loss=1.584648 val_loss=1.685070 val_acc=0.1667
+época 006: train_loss=1.536833 val_loss=1.655530 val_acc=0.1667
+época 007: train_loss=1.503966 val_loss=1.630070 val_acc=0.1667
+época 008: train_loss=1.508849 val_loss=1.602617 val_acc=0.1667
+época 009: train_loss=1.476176 val_loss=1.574288 val_acc=0.3333
+época 010: train_loss=1.432801 val_loss=1.548134 val_acc=0.3333
+época 011: train_loss=1.401554 val_loss=1.510828 val_acc=0.3333
+época 012: train_loss=1.388790 val_loss=1.469060 val_acc=0.3333
+época 013: train_loss=1.368659 val_loss=1.431706 val_acc=0.3333
+época 014: train_loss=1.360718 val_loss=1.397507 val_acc=0.3333
+época 015: train_loss=1.319498 val_loss=1.376674 val_acc=0.3333
+época 016: train_loss=1.305948 val_loss=1.359606 val_acc=0.3333
+época 017: train_loss=1.280928 val_loss=1.341758 val_acc=0.5000
+época 018: train_loss=1.296143 val_loss=1.320737 val_acc=0.5000
+época 019: train_loss=1.272085 val_loss=1.297773 val_acc=0.5000
+época 020: train_loss=1.259244 val_loss=1.266087 val_acc=0.5000
+época 021: train_loss=1.230147 val_loss=1.245148 val_acc=0.5000
+época 022: train_loss=1.284430 val_loss=1.226109 val_acc=0.3333
+época 023: train_loss=1.208702 val_loss=1.211308 val_acc=0.5000
+época 024: train_loss=1.201731 val_loss=1.200172 val_acc=0.5000
+época 025: train_loss=1.196982 val_loss=1.190109 val_acc=0.5000
+época 026: train_loss=1.181335 val_loss=1.177258 val_acc=0.3333
+época 027: train_loss=1.174554 val_loss=1.165927 val_acc=0.3333
+época 028: train_loss=1.155951 val_loss=1.152916 val_acc=0.5000
+época 029: train_loss=1.148309 val_loss=1.141736 val_acc=0.6667
+época 030: train_loss=1.135838 val_loss=1.132313 val_acc=0.6667
+época 031: train_loss=1.125312 val_loss=1.124429 val_acc=0.6667
+época 032: train_loss=1.202533 val_loss=1.116203 val_acc=0.5000
+época 033: train_loss=1.129532 val_loss=1.111055 val_acc=0.5000
+época 034: train_loss=1.121190 val_loss=1.100787 val_acc=0.5000
+época 035: train_loss=1.091686 val_loss=1.090867 val_acc=0.5000
+época 036: train_loss=1.127599 val_loss=1.080728 val_acc=0.6667
+época 037: train_loss=1.111980 val_loss=1.076303 val_acc=0.6667
+época 038: train_loss=1.133598 val_loss=1.069610 val_acc=0.5000
+época 039: train_loss=1.095180 val_loss=1.060674 val_acc=0.5000
+época 040: train_loss=1.070225 val_loss=1.051751 val_acc=0.5000
+época 041: train_loss=1.064639 val_loss=1.049451 val_acc=0.6667
+época 042: train_loss=1.054503 val_loss=1.045690 val_acc=0.6667
+época 043: train_loss=1.039267 val_loss=1.041566 val_acc=0.6667
+época 044: train_loss=1.041850 val_loss=1.032187 val_acc=0.6667
+época 045: train_loss=1.060014 val_loss=1.021275 val_acc=0.5000
+época 046: train_loss=1.033823 val_loss=1.015705 val_acc=0.5000
+época 047: train_loss=1.026899 val_loss=1.011493 val_acc=0.5000
+época 048: train_loss=1.027859 val_loss=1.007710 val_acc=0.5000
+época 049: train_loss=1.007580 val_loss=1.002377 val_acc=0.6667
+época 050: train_loss=1.033687 val_loss=0.996011 val_acc=0.6667
+época 051: train_loss=0.992418 val_loss=0.991694 val_acc=0.5000
+época 052: train_loss=1.044804 val_loss=0.980095 val_acc=0.6667
+época 053: train_loss=1.050209 val_loss=0.972267 val_acc=0.8333
+época 054: train_loss=0.994162 val_loss=0.971111 val_acc=0.6667
+época 055: train_loss=0.971389 val_loss=0.966503 val_acc=0.8333
+época 056: train_loss=0.963736 val_loss=0.961526 val_acc=0.6667
+época 057: train_loss=1.040356 val_loss=0.958171 val_acc=0.8333
+época 058: train_loss=0.963928 val_loss=0.952892 val_acc=0.6667
+época 059: train_loss=0.947971 val_loss=0.947590 val_acc=0.6667
+época 060: train_loss=0.998283 val_loss=0.949294 val_acc=0.6667
+época 061: train_loss=0.954162 val_loss=0.946657 val_acc=0.6667
+época 062: train_loss=0.953807 val_loss=0.941333 val_acc=0.6667
+época 063: train_loss=0.931246 val_loss=0.931978 val_acc=0.6667
+época 064: train_loss=0.966020 val_loss=0.922663 val_acc=0.6667
+época 065: train_loss=0.932283 val_loss=0.916196 val_acc=0.8333
+época 066: train_loss=0.970777 val_loss=0.915935 val_acc=0.8333
+época 067: train_loss=0.922997 val_loss=0.917400 val_acc=0.8333
+época 068: train_loss=0.934998 val_loss=0.914518 val_acc=0.8333
+época 069: train_loss=0.902167 val_loss=0.907813 val_acc=0.6667
+época 070: train_loss=0.917645 val_loss=0.900329 val_acc=0.6667
+época 071: train_loss=0.898260 val_loss=0.892507 val_acc=0.6667
+época 072: train_loss=0.907744 val_loss=0.890577 val_acc=0.8333
+época 073: train_loss=0.958392 val_loss=0.887603 val_acc=0.8333
+época 074: train_loss=0.950513 val_loss=0.891057 val_acc=0.6667
+época 075: train_loss=0.889339 val_loss=0.888590 val_acc=0.6667
+época 076: train_loss=0.902425 val_loss=0.880972 val_acc=0.6667
+época 077: train_loss=0.902335 val_loss=0.868409 val_acc=0.8333
+época 078: train_loss=0.874958 val_loss=0.864075 val_acc=0.8333
+época 079: train_loss=0.941787 val_loss=0.864608 val_acc=0.8333
+época 080: train_loss=0.938918 val_loss=0.862248 val_acc=0.6667
+época 081: train_loss=0.853816 val_loss=0.861508 val_acc=0.6667
+época 082: train_loss=0.856206 val_loss=0.853568 val_acc=0.6667
+época 083: train_loss=0.893636 val_loss=0.848635 val_acc=0.8333
+época 084: train_loss=0.847132 val_loss=0.846208 val_acc=0.8333
+época 085: train_loss=0.842592 val_loss=0.847867 val_acc=0.8333
+época 086: train_loss=0.860940 val_loss=0.846718 val_acc=1.0000
+época 087: train_loss=0.848295 val_loss=0.837664 val_acc=0.6667
+época 088: train_loss=0.839387 val_loss=0.832256 val_acc=0.8333
+época 089: train_loss=0.853677 val_loss=0.830665 val_acc=0.8333
+época 090: train_loss=0.919466 val_loss=0.830656 val_acc=0.6667
+época 091: train_loss=0.858741 val_loss=0.829321 val_acc=0.6667
+época 092: train_loss=0.840828 val_loss=0.817261 val_acc=0.6667
+época 093: train_loss=0.826620 val_loss=0.805986 val_acc=0.6667
+época 094: train_loss=0.861311 val_loss=0.804465 val_acc=0.8333
+época 095: train_loss=0.869630 val_loss=0.805928 val_acc=0.8333
+época 096: train_loss=0.822834 val_loss=0.807201 val_acc=1.0000
+época 097: train_loss=0.808878 val_loss=0.809582 val_acc=0.8333
+época 098: train_loss=0.812237 val_loss=0.810969 val_acc=0.8333
+época 099: train_loss=0.840811 val_loss=0.803452 val_acc=1.0000
+época 100: train_loss=0.823536 val_loss=0.793908 val_acc=0.8333
+Accuracy global test: 0.6667
+F1 macro test:        0.5556
+Matriz de confusión:
+real\pred     C    Al    Si    Cu    Ge    Au
+        C     1     0     0     0     0     0
+       Al     0     0     1     0     0     0
+       Si     0     0     1     0     0     0
+       Cu     0     0     0     1     0     0
+       Ge     0     0     0     1     0     0
+       Au     0     0     0     0     0     1
+Reporte por clase:
+              precision    recall  f1-score   support
+
+           C       1.00      1.00      1.00         1
+          Al       0.00      0.00      0.00         1
+          Si       0.50      1.00      0.67         1
+          Cu       0.50      1.00      0.67         1
+          Ge       0.00      0.00      0.00         1
+          Au       1.00      1.00      1.00         1
+
+    accuracy                           0.67         6
+   macro avg       0.50      0.67      0.56         6
+weighted avg       0.50      0.67      0.56         6
+
+
+============================================================================
+CNN 1D — MID (60 espectros; train=48, val=6, test=6, escala_entrada=4096)
+============================================================================
+época 001: train_loss=1.774013 val_loss=1.791108 val_acc=0.1667
+época 002: train_loss=1.717906 val_loss=1.785065 val_acc=0.1667
+época 003: train_loss=1.678538 val_loss=1.777060 val_acc=0.1667
+época 004: train_loss=1.641857 val_loss=1.767008 val_acc=0.5000
+época 005: train_loss=1.628833 val_loss=1.753590 val_acc=0.5000
+época 006: train_loss=1.583059 val_loss=1.732143 val_acc=0.5000
+época 007: train_loss=1.549305 val_loss=1.705128 val_acc=0.5000
+época 008: train_loss=1.549261 val_loss=1.673564 val_acc=0.5000
+época 009: train_loss=1.508029 val_loss=1.631380 val_acc=0.5000
+época 010: train_loss=1.466359 val_loss=1.583434 val_acc=0.3333
+época 011: train_loss=1.437600 val_loss=1.541008 val_acc=0.3333
+época 012: train_loss=1.426572 val_loss=1.501401 val_acc=0.3333
+época 013: train_loss=1.406787 val_loss=1.467781 val_acc=0.5000
+época 014: train_loss=1.402169 val_loss=1.443339 val_acc=0.5000
+época 015: train_loss=1.356090 val_loss=1.424860 val_acc=0.5000
+época 016: train_loss=1.341322 val_loss=1.396980 val_acc=0.5000
+época 017: train_loss=1.315404 val_loss=1.369559 val_acc=0.5000
+época 018: train_loss=1.334452 val_loss=1.348361 val_acc=0.5000
+época 019: train_loss=1.309386 val_loss=1.323994 val_acc=0.5000
+época 020: train_loss=1.295269 val_loss=1.294352 val_acc=0.3333
+época 021: train_loss=1.261208 val_loss=1.278069 val_acc=0.3333
+época 022: train_loss=1.314599 val_loss=1.263435 val_acc=0.3333
+época 023: train_loss=1.238050 val_loss=1.245566 val_acc=0.3333
+época 024: train_loss=1.229299 val_loss=1.232082 val_acc=0.3333
+época 025: train_loss=1.222638 val_loss=1.219165 val_acc=0.3333
+época 026: train_loss=1.208721 val_loss=1.204488 val_acc=0.5000
+época 027: train_loss=1.203035 val_loss=1.193965 val_acc=0.5000
+época 028: train_loss=1.184179 val_loss=1.184801 val_acc=0.5000
+época 029: train_loss=1.175710 val_loss=1.173784 val_acc=0.5000
+época 030: train_loss=1.161850 val_loss=1.164159 val_acc=0.5000
+época 031: train_loss=1.152066 val_loss=1.156326 val_acc=0.6667
+época 032: train_loss=1.230204 val_loss=1.147034 val_acc=0.6667
+época 033: train_loss=1.154992 val_loss=1.138617 val_acc=0.5000
+época 034: train_loss=1.147436 val_loss=1.130053 val_acc=0.5000
+época 035: train_loss=1.117349 val_loss=1.120172 val_acc=0.5000
+época 036: train_loss=1.154195 val_loss=1.111363 val_acc=0.5000
+época 037: train_loss=1.141494 val_loss=1.105245 val_acc=0.5000
+época 038: train_loss=1.161603 val_loss=1.105497 val_acc=0.6667
+época 039: train_loss=1.120788 val_loss=1.087033 val_acc=0.5000
+época 040: train_loss=1.098636 val_loss=1.081023 val_acc=0.6667
+época 041: train_loss=1.092282 val_loss=1.084149 val_acc=0.5000
+época 042: train_loss=1.077812 val_loss=1.098836 val_acc=0.5000
+época 043: train_loss=1.066396 val_loss=1.077413 val_acc=0.5000
+época 044: train_loss=1.070860 val_loss=1.055037 val_acc=0.5000
+época 045: train_loss=1.087543 val_loss=1.051432 val_acc=0.5000
+época 046: train_loss=1.060552 val_loss=1.050536 val_acc=0.5000
+época 047: train_loss=1.052414 val_loss=1.047758 val_acc=0.5000
+época 048: train_loss=1.055413 val_loss=1.037768 val_acc=0.5000
+época 049: train_loss=1.032367 val_loss=1.026944 val_acc=0.5000
+época 050: train_loss=1.060417 val_loss=1.023520 val_acc=0.5000
+época 051: train_loss=1.014797 val_loss=1.026233 val_acc=0.6667
+época 052: train_loss=1.073871 val_loss=1.015064 val_acc=0.5000
+época 053: train_loss=1.078331 val_loss=1.001338 val_acc=0.5000
+época 054: train_loss=1.020023 val_loss=1.005314 val_acc=0.6667
+época 055: train_loss=0.996099 val_loss=1.018824 val_acc=0.5000
+época 056: train_loss=0.989116 val_loss=1.004282 val_acc=0.5000
+época 057: train_loss=1.066223 val_loss=0.987220 val_acc=0.6667
+época 058: train_loss=0.988070 val_loss=0.980248 val_acc=0.6667
+época 059: train_loss=0.974426 val_loss=0.986363 val_acc=0.6667
+época 060: train_loss=1.022493 val_loss=0.990635 val_acc=0.6667
+época 061: train_loss=0.978426 val_loss=0.984099 val_acc=0.5000
+época 062: train_loss=0.977970 val_loss=0.965035 val_acc=0.6667
+época 063: train_loss=0.955968 val_loss=0.959757 val_acc=0.5000
+época 064: train_loss=0.992712 val_loss=0.962553 val_acc=0.5000
+época 065: train_loss=0.957266 val_loss=0.953971 val_acc=0.5000
+época 066: train_loss=0.998312 val_loss=0.951215 val_acc=0.6667
+época 067: train_loss=0.947881 val_loss=0.948136 val_acc=0.6667
+época 068: train_loss=0.957165 val_loss=0.951064 val_acc=0.6667
+época 069: train_loss=0.925504 val_loss=0.956883 val_acc=0.6667
+época 070: train_loss=0.945806 val_loss=0.949125 val_acc=0.6667
+época 071: train_loss=0.920755 val_loss=0.932439 val_acc=0.5000
+época 072: train_loss=0.930983 val_loss=0.933299 val_acc=0.5000
+época 073: train_loss=0.979058 val_loss=0.928800 val_acc=0.6667
+época 074: train_loss=0.977711 val_loss=0.926791 val_acc=0.5000
+época 075: train_loss=0.914918 val_loss=0.926006 val_acc=0.6667
+época 076: train_loss=0.925513 val_loss=0.915371 val_acc=0.6667
+época 077: train_loss=0.928226 val_loss=0.895018 val_acc=0.6667
+época 078: train_loss=0.901321 val_loss=0.897426 val_acc=0.8333
+época 079: train_loss=0.965125 val_loss=0.912806 val_acc=0.6667
+época 080: train_loss=0.961454 val_loss=0.924740 val_acc=0.6667
+época 081: train_loss=0.881689 val_loss=0.905527 val_acc=0.5000
+época 082: train_loss=0.883560 val_loss=0.883754 val_acc=0.6667
+época 083: train_loss=0.918491 val_loss=0.882304 val_acc=0.6667
+época 084: train_loss=0.871866 val_loss=0.886858 val_acc=0.8333
+época 085: train_loss=0.866415 val_loss=0.889222 val_acc=0.8333
+época 086: train_loss=0.886098 val_loss=0.881429 val_acc=0.6667
+época 087: train_loss=0.873731 val_loss=0.859921 val_acc=0.8333
+época 088: train_loss=0.864015 val_loss=0.861038 val_acc=0.8333
+época 089: train_loss=0.878513 val_loss=0.868049 val_acc=0.8333
+época 090: train_loss=0.939038 val_loss=0.868596 val_acc=0.8333
+época 091: train_loss=0.887216 val_loss=0.854963 val_acc=0.8333
+época 092: train_loss=0.864642 val_loss=0.838166 val_acc=0.8333
+época 093: train_loss=0.847039 val_loss=0.835731 val_acc=0.8333
+época 094: train_loss=0.887290 val_loss=0.841216 val_acc=0.6667
+época 095: train_loss=0.900207 val_loss=0.841389 val_acc=0.6667
+época 096: train_loss=0.848362 val_loss=0.835563 val_acc=1.0000
+época 097: train_loss=0.832884 val_loss=0.846011 val_acc=1.0000
+época 098: train_loss=0.835111 val_loss=0.862294 val_acc=0.5000
+época 099: train_loss=0.866376 val_loss=0.842075 val_acc=0.5000
+época 100: train_loss=0.850654 val_loss=0.820748 val_acc=0.8333
+Accuracy global test: 0.8333
+F1 macro test:        0.7778
+Matriz de confusión:
+real\pred     C    Al    Si    Cu    Ge    Au
+        C     1     0     0     0     0     0
+       Al     0     1     0     0     0     0
+       Si     0     0     1     0     0     0
+       Cu     0     0     0     1     0     0
+       Ge     0     0     0     1     0     0
+       Au     0     0     0     0     0     1
+Reporte por clase:
+              precision    recall  f1-score   support
+
+           C       1.00      1.00      1.00         1
+          Al       1.00      1.00      1.00         1
+          Si       1.00      1.00      1.00         1
+          Cu       0.50      1.00      0.67         1
+          Ge       0.00      0.00      0.00         1
+          Au       1.00      1.00      1.00         1
+
+    accuracy                           0.83         6
+   macro avg       0.75      0.83      0.78         6
+weighted avg       0.75      0.83      0.78         6
+
+Modelo guardado: C:\Users\USUARIO\Documents\espectroscopia_rayos_x\models\cnn_bremsstrahlung.pth
+Curvas guardadas: C:\Users\USUARIO\Documents\espectroscopia_rayos_x\reports\cnn_training_curves.png
+
+============================================================================
+CNN 1D — HIGH (60 espectros; train=48, val=6, test=6, escala_entrada=4096)
+============================================================================
+época 001: train_loss=1.789129 val_loss=1.792883 val_acc=0.1667
+época 002: train_loss=1.754048 val_loss=1.790779 val_acc=0.1667
+época 003: train_loss=1.724691 val_loss=1.787965 val_acc=0.3333
+época 004: train_loss=1.694818 val_loss=1.783893 val_acc=0.1667
+época 005: train_loss=1.681952 val_loss=1.779745 val_acc=0.1667
+época 006: train_loss=1.650849 val_loss=1.776613 val_acc=0.1667
+época 007: train_loss=1.626492 val_loss=1.774059 val_acc=0.1667
+época 008: train_loss=1.633354 val_loss=1.769237 val_acc=0.1667
+época 009: train_loss=1.595418 val_loss=1.760251 val_acc=0.3333
+época 010: train_loss=1.563360 val_loss=1.752536 val_acc=0.3333
+época 011: train_loss=1.536914 val_loss=1.743692 val_acc=0.3333
+época 012: train_loss=1.523859 val_loss=1.721232 val_acc=0.1667
+época 013: train_loss=1.501078 val_loss=1.703883 val_acc=0.1667
+época 014: train_loss=1.498126 val_loss=1.667544 val_acc=0.1667
+época 015: train_loss=1.454637 val_loss=1.634270 val_acc=0.3333
+época 016: train_loss=1.439920 val_loss=1.595760 val_acc=0.3333
+época 017: train_loss=1.408228 val_loss=1.533910 val_acc=0.5000
+época 018: train_loss=1.424761 val_loss=1.504309 val_acc=0.5000
+época 019: train_loss=1.393257 val_loss=1.466571 val_acc=0.5000
+época 020: train_loss=1.379463 val_loss=1.421808 val_acc=0.5000
+época 021: train_loss=1.350371 val_loss=1.403487 val_acc=0.5000
+época 022: train_loss=1.389215 val_loss=1.382506 val_acc=0.5000
+época 023: train_loss=1.322085 val_loss=1.363049 val_acc=0.5000
+época 024: train_loss=1.309913 val_loss=1.341385 val_acc=0.3333
+época 025: train_loss=1.296690 val_loss=1.322506 val_acc=0.3333
+época 026: train_loss=1.282851 val_loss=1.305320 val_acc=0.3333
+época 027: train_loss=1.281348 val_loss=1.287285 val_acc=0.3333
+época 028: train_loss=1.258149 val_loss=1.272457 val_acc=0.5000
+época 029: train_loss=1.244840 val_loss=1.273779 val_acc=0.5000
+época 030: train_loss=1.235845 val_loss=1.249492 val_acc=0.5000
+época 031: train_loss=1.218267 val_loss=1.244882 val_acc=0.5000
+época 032: train_loss=1.293028 val_loss=1.241205 val_acc=0.5000
+época 033: train_loss=1.215635 val_loss=1.214324 val_acc=0.5000
+época 034: train_loss=1.210622 val_loss=1.207150 val_acc=0.6667
+época 035: train_loss=1.179690 val_loss=1.190778 val_acc=0.6667
+época 036: train_loss=1.214041 val_loss=1.179709 val_acc=0.5000
+época 037: train_loss=1.208594 val_loss=1.169464 val_acc=0.5000
+época 038: train_loss=1.220423 val_loss=1.163020 val_acc=0.5000
+época 039: train_loss=1.167114 val_loss=1.154668 val_acc=0.5000
+época 040: train_loss=1.155063 val_loss=1.147160 val_acc=0.5000
+época 041: train_loss=1.136982 val_loss=1.165435 val_acc=0.5000
+época 042: train_loss=1.128118 val_loss=1.139849 val_acc=0.5000
+época 043: train_loss=1.111419 val_loss=1.114299 val_acc=0.5000
+época 044: train_loss=1.112399 val_loss=1.123835 val_acc=0.5000
+época 045: train_loss=1.141836 val_loss=1.133945 val_acc=0.5000
+época 046: train_loss=1.115042 val_loss=1.119022 val_acc=0.6667
+época 047: train_loss=1.101734 val_loss=1.090235 val_acc=0.5000
+época 048: train_loss=1.102422 val_loss=1.083186 val_acc=0.6667
+época 049: train_loss=1.074033 val_loss=1.111742 val_acc=0.5000
+época 050: train_loss=1.110147 val_loss=1.072416 val_acc=0.6667
+época 051: train_loss=1.059278 val_loss=1.063736 val_acc=0.6667
+época 052: train_loss=1.108634 val_loss=1.084870 val_acc=0.6667
+época 053: train_loss=1.130543 val_loss=1.051465 val_acc=0.8333
+época 054: train_loss=1.052521 val_loss=1.058113 val_acc=0.6667
+época 055: train_loss=1.043653 val_loss=1.038209 val_acc=0.6667
+época 056: train_loss=1.032454 val_loss=1.073509 val_acc=0.5000
+época 057: train_loss=1.126956 val_loss=1.036428 val_acc=0.5000
+época 058: train_loss=1.028887 val_loss=1.026800 val_acc=0.5000
+época 059: train_loss=1.012187 val_loss=1.020528 val_acc=0.8333
+época 060: train_loss=1.061878 val_loss=1.018606 val_acc=0.5000
+época 061: train_loss=1.018661 val_loss=1.026896 val_acc=0.6667
+época 062: train_loss=1.023341 val_loss=1.002576 val_acc=0.6667
+época 063: train_loss=0.995697 val_loss=0.999857 val_acc=0.8333
+época 064: train_loss=1.040290 val_loss=0.993121 val_acc=0.8333
+época 065: train_loss=0.995491 val_loss=1.025941 val_acc=0.6667
+época 066: train_loss=1.046582 val_loss=0.996967 val_acc=0.6667
+época 067: train_loss=0.983096 val_loss=0.990822 val_acc=0.6667
+época 068: train_loss=0.994941 val_loss=0.980052 val_acc=0.8333
+época 069: train_loss=0.959994 val_loss=0.965481 val_acc=0.6667
+época 070: train_loss=0.985197 val_loss=0.959113 val_acc=0.5000
+época 071: train_loss=0.954592 val_loss=0.953265 val_acc=0.8333
+época 072: train_loss=0.967122 val_loss=0.958061 val_acc=0.5000
+época 073: train_loss=1.019712 val_loss=0.958074 val_acc=0.5000
+época 074: train_loss=1.023057 val_loss=0.948269 val_acc=0.6667
+época 075: train_loss=0.951762 val_loss=0.945099 val_acc=0.6667
+época 076: train_loss=0.961851 val_loss=0.924402 val_acc=0.6667
+época 077: train_loss=0.960966 val_loss=0.925977 val_acc=0.8333
+época 078: train_loss=0.935040 val_loss=0.948096 val_acc=0.5000
+época 079: train_loss=1.005205 val_loss=0.936682 val_acc=0.5000
+época 080: train_loss=1.002771 val_loss=0.937315 val_acc=0.5000
+época 081: train_loss=0.913233 val_loss=0.937233 val_acc=0.5000
+época 082: train_loss=0.914337 val_loss=0.911201 val_acc=0.6667
+época 083: train_loss=0.950570 val_loss=0.911870 val_acc=0.8333
+época 084: train_loss=0.903097 val_loss=0.906688 val_acc=0.8333
+época 085: train_loss=0.898266 val_loss=0.899125 val_acc=0.6667
+época 086: train_loss=0.919186 val_loss=0.893107 val_acc=0.8333
+época 087: train_loss=0.899676 val_loss=0.901658 val_acc=1.0000
+época 088: train_loss=0.896396 val_loss=0.896719 val_acc=1.0000
+época 089: train_loss=0.910659 val_loss=0.895479 val_acc=0.6667
+época 090: train_loss=0.985296 val_loss=0.872426 val_acc=0.8333
+época 091: train_loss=0.916784 val_loss=0.876185 val_acc=0.8333
+época 092: train_loss=0.897787 val_loss=0.866853 val_acc=0.6667
+época 093: train_loss=0.878673 val_loss=0.870186 val_acc=0.8333
+época 094: train_loss=0.914036 val_loss=0.865089 val_acc=1.0000
+época 095: train_loss=0.940013 val_loss=0.862479 val_acc=0.6667
+época 096: train_loss=0.879012 val_loss=0.864717 val_acc=0.8333
+época 097: train_loss=0.869512 val_loss=0.868721 val_acc=0.8333
+época 098: train_loss=0.864066 val_loss=0.872992 val_acc=0.6667
+época 099: train_loss=0.897109 val_loss=0.853331 val_acc=0.6667
+época 100: train_loss=0.886723 val_loss=0.885671 val_acc=0.6667
+Accuracy global test: 0.6667
+F1 macro test:        0.5556
+Matriz de confusión:
+real\pred     C    Al    Si    Cu    Ge    Au
+        C     1     0     0     0     0     0
+       Al     0     0     1     0     0     0
+       Si     0     0     1     0     0     0
+       Cu     0     0     0     1     0     0
+       Ge     0     0     0     1     0     0
+       Au     0     0     0     0     0     1
+Reporte por clase:
+              precision    recall  f1-score   support
+
+           C       1.00      1.00      1.00         1
+          Al       0.00      0.00      0.00         1
+          Si       0.50      1.00      0.67         1
+          Cu       0.50      1.00      0.67         1
+          Ge       0.00      0.00      0.00         1
+          Au       1.00      1.00      1.00         1
+
+    accuracy                           0.67         6
+   macro avg       0.50      0.67      0.56         6
+weighted avg       0.50      0.67      0.56         6
+
+
+Accuracy final CNN 1D
+nivel | accuracy
+low   | 0.6667
+mid   | 0.8333
+high  | 0.6667
