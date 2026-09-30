@@ -1,0 +1,667 @@
+DIAGNOSTICO DE API - NIST EPQ mediante JPype
+==============================================================================
+DTSA2_HOME      : C:\Users\USUARIO\AppData\Local\NIST\NIST DTSA-II Polaris 2026-06-24
+jvm.dll         : C:\Users\USUARIO\AppData\Local\NIST\NIST DTSA-II Polaris 2026-06-24\java-runtime\bin\server\jvm.dll
+epq jar         : C:\Users\USUARIO\AppData\Local\NIST\NIST DTSA-II Polaris 2026-06-24\epq-15.1.50.jar
+JARs en classpath: 20
+jpype           : 1.7.1
+Acceso a paquetes EPQLibrary / NISTMonte / Gen3: OK
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.MonteCarloSS
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS()
+  -- Metodos declarados (29) --
+     [D computeDetectorPosition(double, double)
+     boolean allElectronsComplete()
+     double distance([D, [D)
+     double getBeamEnergy()
+     gov.nist.microanalysis.NISTMonte.Electron getElectron()
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$ElectronGun getElectronGun()
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$Region addSubRegion(gov.nist.microanalysis.NISTMonte.MonteCarloSS$Region, gov.nist.microanalysis.EPQLibrary.Material, gov.nist.microanalysis.NISTMonte.MonteCarloSS$Shape)
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$Region addSubRegion(gov.nist.microanalysis.NISTMonte.MonteCarloSS$Region, gov.nist.microanalysis.NISTMonte.IMaterialScatterModel, gov.nist.microanalysis.NISTMonte.MonteCarloSS$Shape)
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$Region getChamber()
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$RegionBase findRegionContaining([D)
+     int getElectronGeneration()
+     java.util.Map getMaterialMap([D, [D)
+     java.util.Set getAtomicShellSet()
+     java.util.Set getElementSet()
+     void addActionListener(java.awt.event.ActionListener)
+     void estimateTrajectoryVolume([D, [D)
+     void fireEvent(int)
+     void initializeTrajectory()
+     void removeActionListener(java.awt.event.ActionListener)
+     void rotate([D, double, double, double)
+     void runMultipleTrajectories(int)
+     void runTrajectory()
+     void setBeamEnergy(double)
+     void setElectronGun(gov.nist.microanalysis.NISTMonte.MonteCarloSS$ElectronGun)
+     void takeStep()
+     void trackSecondaryElectron(gov.nist.microanalysis.NISTMonte.Electron)
+     void translate([D)
+     void updateMaterial(gov.nist.microanalysis.EPQLibrary.Material, gov.nist.microanalysis.EPQLibrary.Material)
+     void updateMaterial(gov.nist.microanalysis.NISTMonte.IMaterialScatterModel, gov.nist.microanalysis.NISTMonte.IMaterialScatterModel)
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.MonteCarloSS$Region
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$Region(gov.nist.microanalysis.NISTMonte.MonteCarloSS$Region, gov.nist.microanalysis.NISTMonte.IMaterialScatterModel, gov.nist.microanalysis.NISTMonte.MonteCarloSS$Shape)
+  -- Metodos declarados (2) --
+     void clearSubRegions()
+     void removeSubRegion(gov.nist.microanalysis.NISTMonte.MonteCarloSS$TransformableRegion)
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.MonteCarloSS$RegionBase
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$RegionBase()
+  -- Metodos declarados (13) --
+     boolean isContainingRegion(gov.nist.microanalysis.NISTMonte.MonteCarloSS$RegionBase)
+     double getAtomsPerCubicMeter(gov.nist.microanalysis.EPQLibrary.Element)
+     gov.nist.microanalysis.EPQLibrary.Material getMaterial()
+     gov.nist.microanalysis.NISTMonte.IMaterialScatterModel getScatterModel()
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$RegionBase containingSubRegion([D)
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$RegionBase findEndOfStep([D, [D)
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$RegionBase getParent()
+     gov.nist.microanalysis.NISTMonte.MonteCarloSS$Shape getShape()
+     java.lang.String toString()
+     java.util.List getSubRegions()
+     java.util.Set getElements(boolean)
+     void updateMaterial(gov.nist.microanalysis.EPQLibrary.Material, gov.nist.microanalysis.NISTMonte.IMaterialScatterModel)
+     void updateMaterial(gov.nist.microanalysis.NISTMonte.IMaterialScatterModel, gov.nist.microanalysis.NISTMonte.IMaterialScatterModel)
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.MonteCarloSS$ElectronGun
+==============================================================================
+  -- Constructores (0) --
+  -- Metodos declarados (5) --
+     [D getCenter()
+     double getBeamEnergy()
+     gov.nist.microanalysis.NISTMonte.Electron createElectron()
+     void setBeamEnergy(double)
+     void setCenter([D)
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.GaussianBeam
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.GaussianBeam(double)
+  -- Metodos declarados (7) --
+     [D getCenter()
+     double getBeamEnergy()
+     double getWidth()
+     gov.nist.microanalysis.NISTMonte.Electron createElectron()
+     void setBeamEnergy(double)
+     void setCenter([D)
+     void setWidth(double)
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.Chamber
+==============================================================================
+  [NO DISPONIBLE] Class gov.nist.microanalysis.NISTMonte.Chamber is not found
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.MultiPlaneShape
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.MultiPlaneShape()
+  -- Metodos declarados (14) --
+     [D intersection([Lgov.nist.microanalysis.NISTMonte.MultiPlaneShape$Plane;)
+     [D invert([D)
+     [D normalize([D)
+     gov.nist.microanalysis.NISTMonte.MultiPlaneShape createBlock([D, [D)
+     gov.nist.microanalysis.NISTMonte.MultiPlaneShape createBlock([D, [D, double, double, double)
+     gov.nist.microanalysis.NISTMonte.MultiPlaneShape createFilm([D, [D, double)
+     gov.nist.microanalysis.NISTMonte.MultiPlaneShape createNamid([D, int, double, double)
+     gov.nist.microanalysis.NISTMonte.MultiPlaneShape createSquarePyramid([D, double, double)
+     gov.nist.microanalysis.NISTMonte.MultiPlaneShape createSubstrate([D, [D)
+     gov.nist.microanalysis.NISTMonte.MultiPlaneShape createTriangularPrism([D, double, double)
+     java.util.List getPlanes()
+     void addOffsetPlane([D, [D, double)
+     void addPlane([D, [D)
+     void render(gov.nist.microanalysis.NISTMonte.TrajectoryVRML$RenderContext, java.io.Writer)
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.BasicMaterialModel
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.BasicMaterialModel(gov.nist.microanalysis.EPQLibrary.Material)
+  -- Metodos declarados (8) --
+     double calculateEnergyLoss(double, gov.nist.microanalysis.NISTMonte.Electron)
+     double getMinEforTracking()
+     double randomMeanPathLength(gov.nist.microanalysis.NISTMonte.Electron)
+     gov.nist.microanalysis.EPQLibrary.Material getMaterial()
+     gov.nist.microanalysis.NISTMonte.Electron barrierScatter(gov.nist.microanalysis.NISTMonte.Electron, gov.nist.microanalysis.NISTMonte.MonteCarloSS$RegionBase)
+     gov.nist.microanalysis.NISTMonte.Electron scatter(gov.nist.microanalysis.NISTMonte.Electron)
+     void initializeDefaultStrategy()
+     void setMinEforTracking(double)
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.Gen3.BremsstrahlungXRayGeneration3
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.Gen3.BremsstrahlungXRayGeneration3()
+  -- Metodos declarados (5) --
+     gov.nist.microanalysis.EPQLibrary.Bremsstrahlung getBremsstrahlung(gov.nist.microanalysis.EPQLibrary.Element)
+     gov.nist.microanalysis.NISTMonte.Gen3.BremsstrahlungXRayGeneration3 create(gov.nist.microanalysis.NISTMonte.MonteCarloSS)
+     void actionPerformed(java.awt.event.ActionEvent)
+     void initialize()
+     void initializeDefaultStrategy()
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3(java.lang.String, java.lang.String)
+  -- Metodos declarados (16) --
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$BremsstrahlungXRay addBremXRay([D, double, double, gov.nist.microanalysis.EPQLibrary.Element, [D, double)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$CharacteristicXRay addCharXRay([D, double, double, double, gov.nist.microanalysis.EPQLibrary.XRayTransition)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$CharacteristicXRay getXRay(gov.nist.microanalysis.EPQLibrary.XRayTransition)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$ComptonXRay addComptonXRay([D, [D, double, gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay addXRay(gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$ComptonXRay, [D, double, double, double)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay addXRay(gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay, [D, double, double)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay getXRay(double)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay getXRay(int)
+     int getEventCount()
+     java.util.List getAllImplementations()
+     void addXRayListener(java.awt.event.ActionListener)
+     void fireXRayListeners()
+     void fireXRayListeners(int)
+     void initialize(gov.nist.microanalysis.NISTMonte.MonteCarloSS)
+     void removeXRayListener(java.awt.event.ActionListener)
+     void reset()
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay
+==============================================================================
+  -- Constructores (2) --
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay(gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3, [D, double, double, double)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay(gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3, [D, double, double, double, gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$XRay)
+  -- Metodos declarados (5) --
+     [D getGenerationPos()
+     [D getPosition()
+     double getEnergy()
+     double getGenerated()
+     double getIntensity()
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$BremsstrahlungXRay
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3$BremsstrahlungXRay(gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3, [D, double, double, double, gov.nist.microanalysis.EPQLibrary.Element, [D, double)
+  -- Metodos declarados (3) --
+     double getAngle([D)
+     double getElectronEnergy()
+     gov.nist.microanalysis.EPQLibrary.Element getElement()
+
+==============================================================================
+CLASE gov.nist.microanalysis.NISTMonte.Gen3.XRayTransport3
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.NISTMonte.Gen3.XRayTransport3()
+  -- Metodos declarados (10) --
+     [D getEndPoint()
+     double calculateEffectiveMAC(java.util.Map, double)
+     double comptonAngular(double, double)
+     double comptonShift(double, double)
+     gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3 getSource()
+     gov.nist.microanalysis.NISTMonte.Gen3.XRayTransport3 create(gov.nist.microanalysis.NISTMonte.MonteCarloSS, [D, gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3)
+     gov.nist.microanalysis.NISTMonte.Gen3.XRayTransport3 create(gov.nist.microanalysis.NISTMonte.MonteCarloSS, gov.nist.microanalysis.EPQLibrary.Detector.IXRayDetector, gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3)
+     void actionPerformed(java.awt.event.ActionEvent)
+     void initialize(gov.nist.microanalysis.NISTMonte.MonteCarloSS, [D, gov.nist.microanalysis.NISTMonte.Gen3.BaseXRayGeneration3)
+     void initializeDefaultStrategy()
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.Composition
+==============================================================================
+  -- Constructores (5) --
+     gov.nist.microanalysis.EPQLibrary.Composition()
+     gov.nist.microanalysis.EPQLibrary.Composition([Lgov.nist.microanalysis.EPQLibrary.Element;, [D)
+     gov.nist.microanalysis.EPQLibrary.Composition([Lgov.nist.microanalysis.EPQLibrary.Element;, [D, java.lang.String)
+     gov.nist.microanalysis.EPQLibrary.Composition(gov.nist.microanalysis.EPQLibrary.Composition)
+     gov.nist.microanalysis.EPQLibrary.Composition(gov.nist.microanalysis.EPQLibrary.Element)
+  -- Metodos declarados (83) --
+     [J createProjectors(long)
+     boolean almostEquals(gov.nist.microanalysis.EPQLibrary.Composition, double)
+     boolean containsAll(java.util.Collection)
+     boolean containsElement(gov.nist.microanalysis.EPQLibrary.Element)
+     boolean equals(java.lang.Object)
+     boolean isUncertain()
+     double atomicPercent(gov.nist.microanalysis.EPQLibrary.Element)
+     double atomsPerKg(gov.nist.microanalysis.EPQLibrary.Element, boolean)
+     double difference(gov.nist.microanalysis.EPQLibrary.Composition)
+     double massAbsorptionCoefficient(double)
+     double meanAtomicNumber()
+     double stoichiometry(gov.nist.microanalysis.EPQLibrary.Element)
+     double sumWeightFraction()
+     double weightAvgAtomicNumber()
+     double weightFraction(gov.nist.microanalysis.EPQLibrary.Element, boolean)
+     double weightPercent(gov.nist.microanalysis.EPQLibrary.Element, boolean)
+     gov.nist.microanalysis.EPQLibrary.Composition asComposition()
+     gov.nist.microanalysis.EPQLibrary.Composition clone()
+     gov.nist.microanalysis.EPQLibrary.Composition combine(java.lang.String, java.util.Map)
+     gov.nist.microanalysis.EPQLibrary.Composition normalize()
+     gov.nist.microanalysis.EPQLibrary.Composition parseGlass(java.lang.String)
+     gov.nist.microanalysis.EPQLibrary.Composition positiveDefinite(gov.nist.microanalysis.EPQLibrary.Composition)
+     gov.nist.microanalysis.EPQLibrary.Composition randomize(double, double)
+     gov.nist.microanalysis.EPQLibrary.Composition$Representation getOptimalRepresentation()
+     gov.nist.microanalysis.EPQLibrary.Element getNthElementByAtomicFraction(int)
+     gov.nist.microanalysis.EPQLibrary.Element getNthElementByWeight(int)
+     gov.nist.microanalysis.Utility.UncertainValue2 atomicPercentU(gov.nist.microanalysis.EPQLibrary.Element)
+     gov.nist.microanalysis.Utility.UncertainValue2 atomicPercentU(gov.nist.microanalysis.EPQLibrary.Element, boolean)
+     gov.nist.microanalysis.Utility.UncertainValue2 atomsPerKgU(gov.nist.microanalysis.EPQLibrary.Element, boolean)
+     gov.nist.microanalysis.Utility.UncertainValue2 differenceU(gov.nist.microanalysis.EPQLibrary.Composition)
+     gov.nist.microanalysis.Utility.UncertainValue2 meanAtomicNumberU()
+     gov.nist.microanalysis.Utility.UncertainValue2 normalize(gov.nist.microanalysis.Utility.UncertainValue2, double, boolean)
+     gov.nist.microanalysis.Utility.UncertainValue2 stoichiometryU(gov.nist.microanalysis.EPQLibrary.Element)
+     gov.nist.microanalysis.Utility.UncertainValue2 sumWeightFractionU()
+     gov.nist.microanalysis.Utility.UncertainValue2 sumWeightPercentU()
+     gov.nist.microanalysis.Utility.UncertainValue2 weightAvgAtomicNumberU()
+     gov.nist.microanalysis.Utility.UncertainValue2 weightFractionU(gov.nist.microanalysis.EPQLibrary.Element, boolean)
+     gov.nist.microanalysis.Utility.UncertainValue2 weightFractionU(gov.nist.microanalysis.EPQLibrary.Element, boolean, boolean)
+     int compareTo(gov.nist.microanalysis.EPQLibrary.Composition)
+     int compareTo(java.lang.Object)
+     int getElementCount()
+     int hashCode()
+     java.lang.Object clone()
+     java.lang.Object readResolve()
+     java.lang.String asHTML()
+     java.lang.String descriptiveString(boolean)
+     java.lang.String getName()
+     java.lang.String stoichiometryString()
+     java.lang.String toHTMLTable()
+     java.lang.String toParsableFormat()
+     java.lang.String toString()
+     java.lang.String weightPercentString(boolean)
+     java.util.List getSortedElements()
+     java.util.Map absoluteError(gov.nist.microanalysis.EPQLibrary.Composition, boolean)
+     java.util.Map relativeError(gov.nist.microanalysis.EPQLibrary.Composition, boolean)
+     java.util.Set elementSet([Lgov.nist.microanalysis.EPQLibrary.Composition;)
+     java.util.Set getElementSet()
+     java.util.Set getElementSet(double, double)
+     long indexHashCodeL()
+     long indexHashCodeS()
+     void addElement(gov.nist.microanalysis.EPQLibrary.Element, double)
+     void addElement(gov.nist.microanalysis.EPQLibrary.Element, java.lang.Number)
+     void addElement(int, double)
+     void addElement(int, gov.nist.microanalysis.Utility.UncertainValue2)
+     void addElementByStoiciometry(gov.nist.microanalysis.EPQLibrary.Element, double)
+     void addElementByStoiciometry(gov.nist.microanalysis.EPQLibrary.Element, gov.nist.microanalysis.Utility.UncertainValue2)
+     void clear()
+     void defineByMaterialFraction([Lgov.nist.microanalysis.EPQLibrary.Composition;, [D)
+     void defineByMoleFraction([Lgov.nist.microanalysis.EPQLibrary.Element;, [D)
+     void defineByWeightFraction([Lgov.nist.microanalysis.EPQLibrary.Element;, [D)
+     void defineByWeightFraction([Lgov.nist.microanalysis.EPQLibrary.Element;, [Lgov.nist.microanalysis.Utility.UncertainValue2;)
+     void defineByWeightFraction(java.util.Map)
+     void forceNormalization()
+     void readObject(java.io.ObjectInputStream)
+     void recomputeStoiciometry()
+     void recomputeWeightFractions()
+     void removeElement(gov.nist.microanalysis.EPQLibrary.Element)
+     void renormalize()
+     void replicate(gov.nist.microanalysis.EPQLibrary.Composition)
+     void setName(java.lang.String)
+     void setOptimalRepresentation(gov.nist.microanalysis.EPQLibrary.Composition$Representation)
+     void toCSV(java.io.File, java.util.Collection)
+     void writeObject(java.io.ObjectOutputStream)
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.Material
+==============================================================================
+  -- Constructores (4) --
+     gov.nist.microanalysis.EPQLibrary.Material([Lgov.nist.microanalysis.EPQLibrary.Element;, [D, double, java.lang.String)
+     gov.nist.microanalysis.EPQLibrary.Material(double)
+     gov.nist.microanalysis.EPQLibrary.Material(gov.nist.microanalysis.EPQLibrary.Composition, double)
+     gov.nist.microanalysis.EPQLibrary.Material(gov.nist.microanalysis.EPQLibrary.Element, double)
+  -- Metodos declarados (22) --
+     boolean almostEquals(gov.nist.microanalysis.EPQLibrary.Composition, double)
+     boolean equals(java.lang.Object)
+     double atomsPerCubicMeter(gov.nist.microanalysis.EPQLibrary.Element)
+     double getDensity()
+     gov.nist.microanalysis.EPQLibrary.Composition clone()
+     gov.nist.microanalysis.EPQLibrary.Composition fromParsableFormat(java.lang.String)
+     gov.nist.microanalysis.EPQLibrary.Material clone()
+     gov.nist.microanalysis.EPQLibrary.Material createNull()
+     gov.nist.microanalysis.EPQLibrary.Material createOther()
+     int compareTo(gov.nist.microanalysis.EPQLibrary.Composition)
+     int compareTo(java.lang.Object)
+     int hashCode()
+     java.lang.Object clone()
+     java.lang.String descriptiveString(boolean)
+     java.lang.String toParsableFormat()
+     void clear()
+     void defineByMaterialFraction([Lgov.nist.microanalysis.EPQLibrary.Composition;, [D, double)
+     void defineByMaterialFraction([Lgov.nist.microanalysis.EPQLibrary.Material;, [D)
+     void defineByWeightFraction(java.util.Map, double)
+     void renormalize()
+     void replicate(gov.nist.microanalysis.EPQLibrary.Material)
+     void setDensity(double)
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.ToSI
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.EPQLibrary.ToSI()
+  -- Metodos declarados (19) --
+     double AMU(double)
+     double MeV(double)
+     double Torr(double)
+     double angstrom(double)
+     double barn(double)
+     double centigrade(double)
+     double cm(double)
+     double cmSqrPerg(double)
+     double dyne(double)
+     double eV(double)
+     double fahrenheit(double)
+     double g(double)
+     double gPerCC(double)
+     double inverse_gPerCC(double)
+     double keV(double)
+     double micrometer(double)
+     double percm(double)
+     double sqrAngstrom(double)
+     gov.nist.microanalysis.Utility.UncertainValue2 ugPcm2(java.lang.Number)
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.SpectrumUtils
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.EPQLibrary.SpectrumUtils()
+  -- Metodos declarados (105) --
+     [D backgroundCorrectedIntegral(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, double)
+     [D backgroundCorrectedIntegral(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, double, double, double, double, double)
+     [D backgroundCorrectedIntegral(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int, int, int, int, int, int)
+     [D energyArray(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     [D estimateHighBackground(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     [D estimateLowBackground(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     [D filterSpectrum(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     [D getDetectorAxis(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     [D getDetectorPosition(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     [D getSamplePosition(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     [D getSurfaceNormal(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     [D slice(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int, int)
+     [D toDoubleArray(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     [I toIntArray(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     [Lgov.nist.microanalysis.EPQLibrary.ISpectrumData; partition(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     boolean areCalibratedSimilar(gov.nist.microanalysis.EPQLibrary.SpectrumProperties, gov.nist.microanalysis.EPQLibrary.ISpectrumData, double)
+     boolean areCompatible(gov.nist.microanalysis.EPQLibrary.ISpectrumData, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     boolean equalData(gov.nist.microanalysis.EPQLibrary.ISpectrumData, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     boolean isValidChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     double applyFilter(gov.nist.microanalysis.EPQLibrary.ISpectrumData, [D, int)
+     double avgCounts(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     double avgEnergyForChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     double chiSqr(gov.nist.microanalysis.EPQLibrary.ISpectrumData, gov.nist.microanalysis.EPQLibrary.ISpectrumData, java.util.Collection)
+     double computeSignalToNoise(gov.nist.microanalysis.EPQLibrary.RegionOfInterestSet$RegionOfInterest, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     double deltaCounts(gov.nist.microanalysis.EPQLibrary.ISpectrumData, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     double dotProduct(gov.nist.microanalysis.EPQLibrary.ISpectrumData, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     double energyToWavelength(double)
+     double energyToWavenumber(double)
+     double fwhmToGaussianWidth(double)
+     double gaussian(double, double)
+     double gaussianWidthToFWHM(double)
+     double getAverageFaradayCurrent(gov.nist.microanalysis.EPQLibrary.SpectrumProperties, double)
+     double getBeamEnergy(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     double getDetectorDistance(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     double getDose(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     double getExitAngle(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     double getFWHMAtMnKA(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double)
+     double getFWHMAtMnKA(gov.nist.microanalysis.EPQLibrary.SpectrumProperties, double)
+     double getMassThickness(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     double getMnKa()
+     double getSolidAngle(gov.nist.microanalysis.EPQLibrary.SpectrumProperties, double)
+     double getTakeOffAngle(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     double integrate(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, double)
+     double linewidth(double, double, double)
+     double linewidth_eV(double, double, double)
+     double maxEnergyForChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     double measureDissimilarity(gov.nist.microanalysis.EPQLibrary.ISpectrumData, java.util.Collection, gov.nist.microanalysis.EPQLibrary.RegionOfInterestSet)
+     double minEnergyForChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     double noiseFromResolution(double, double, double)
+     double resolution(double, double, double)
+     double sampleToDetectorDistance(gov.nist.microanalysis.EPQLibrary.SpectrumProperties, double)
+     double sumCounts(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int, int)
+     double totalCounts(gov.nist.microanalysis.EPQLibrary.ISpectrumData, boolean)
+     double wavelengthToEnergy(double)
+     gov.nist.microanalysis.EPQLibrary.BaseSpectrum copy(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.BaseSpectrum scale(double, double, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.BaseSpectrum scale(double, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.Composition getComposition(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.DerivedSpectrum getSlice(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int, int)
+     gov.nist.microanalysis.EPQLibrary.EditableSpectrum addNoiseToSpectrum(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double)
+     gov.nist.microanalysis.EPQLibrary.EditableSpectrum subSampleSpectrum(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double)
+     gov.nist.microanalysis.EPQLibrary.EditableSpectrum subSampleSpectrum(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, long)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData applyEDSDetector(gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData applyZeroPeakDiscriminator(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData applyZeroPeakDiscriminator(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData getAbsSpectrum(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData getPositiveSpectrum(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData linearizeSpectrum(gov.nist.microanalysis.EPQLibrary.ISpectrumData, [D, double)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData linearizeSpectrum2(gov.nist.microanalysis.EPQLibrary.ISpectrumData, [D, double)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData remap(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, double)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData remap(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, double, int)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData remap(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData scaleWithLiveTime(double, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData sum(java.util.Collection)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData toSpectrum(double, double, [D)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData toSpectrum(double, double, int, [D)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData trimSpectrum(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, double)
+     gov.nist.microanalysis.Utility.LinearRegression linearEnergyCalibration(java.util.Collection, java.util.Collection, double, double, double)
+     gov.nist.microanalysis.Utility.UncertainValue2 fwhmToGaussianWidth(gov.nist.microanalysis.Utility.UncertainValue2)
+     gov.nist.microanalysis.Utility.UncertainValue2 gaussianWidthToFWHM(gov.nist.microanalysis.Utility.UncertainValue2)
+     gov.nist.microanalysis.Utility.UncertainValue2 noiseFromResolution(gov.nist.microanalysis.Utility.UncertainValue2, gov.nist.microanalysis.Utility.UncertainValue2, double)
+     gov.nist.microanalysis.Utility.UncertainValue2 resolutionU(gov.nist.microanalysis.Utility.UncertainValue2, gov.nist.microanalysis.Utility.UncertainValue2, double)
+     int bound(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     int channelForEnergy(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double)
+     int firstNonZeroChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     int getZeroStrobeDiscriminatorChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     int largestNonZeroChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     int lastNonZeroChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     int maxChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     int maxChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int, int)
+     int minChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     int smallestNonZeroChannel(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     java.awt.Color toColor(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     java.awt.image.BufferedImage toStrip(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, double, int, int)
+     java.awt.image.BufferedImage toStrip(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int)
+     java.awt.image.BufferedImage toStrips(java.util.Collection, int)
+     java.awt.image.BufferedImage toThumbnail(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int, int, int)
+     java.lang.String spectrumDataToText(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double, double, boolean)
+     java.lang.String spectrumPropertiesToText(gov.nist.microanalysis.EPQLibrary.SpectrumProperties)
+     java.util.Map roughEnergyCalibration(java.util.Collection, java.util.Collection, double)
+     java.util.Map roughEnergyCalibration(java.util.Collection, java.util.Collection, double, double, double)
+     java.util.Set peakPositions(gov.nist.microanalysis.EPQLibrary.ISpectrumData, int, double)
+     java.util.SortedSet asIntervals(gov.nist.microanalysis.EPQLibrary.ISpectrumData, gov.nist.microanalysis.EPQLibrary.RegionOfInterestSet)
+     void rename(gov.nist.microanalysis.EPQLibrary.ISpectrumData, java.lang.String)
+     void verifyCompatibility(gov.nist.microanalysis.EPQLibrary.ISpectrumData, gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.Element
+==============================================================================
+  -- Constructores (2) --
+     gov.nist.microanalysis.EPQLibrary.Element()
+     gov.nist.microanalysis.EPQLibrary.Element(int)
+  -- Metodos declarados (34) --
+     [Lgov.nist.microanalysis.EPQLibrary.Element; range(gov.nist.microanalysis.EPQLibrary.Element, gov.nist.microanalysis.EPQLibrary.Element)
+     boolean equals(java.lang.Object)
+     boolean isValid()
+     boolean isValid(int)
+     double energyLoss(double)
+     double getAtomicWeight()
+     double getAtomicWeight(int)
+     double getIonizationEnergy()
+     double getMass()
+     double massAbsorptionCoefficient(double)
+     double massAbsorptionCoefficient(gov.nist.microanalysis.EPQLibrary.XRayTransition)
+     double meanIonizationPotential()
+     double meanIonizationPotential(int)
+     gov.nist.microanalysis.EPQLibrary.Element byAbbrev(java.lang.String)
+     gov.nist.microanalysis.EPQLibrary.Element byAtomicNumber(int)
+     gov.nist.microanalysis.EPQLibrary.Element byName(java.lang.String)
+     int atomicNumberForAbbrev(java.lang.String)
+     int atomicNumberForName(java.lang.String)
+     int atomicNumberForNameUncase(java.lang.String)
+     int compareTo(gov.nist.microanalysis.EPQLibrary.Element)
+     int compareTo(java.lang.Object)
+     int getAtomicNumber()
+     int hashCode()
+     java.lang.Object readResolve()
+     java.lang.String toAbbrev()
+     java.lang.String toAbbrev(int)
+     java.lang.String toString()
+     java.lang.String toString(int)
+     java.lang.String toString(java.util.Collection, boolean)
+     java.util.ArrayList getListOfAbbreviations(gov.nist.microanalysis.EPQLibrary.Element, gov.nist.microanalysis.EPQLibrary.Element)
+     java.util.ArrayList getListOfElements(gov.nist.microanalysis.EPQLibrary.Element, gov.nist.microanalysis.EPQLibrary.Element)
+     java.util.List allElements()
+     java.util.Set parseElementString(java.lang.String)
+     void readAtomicWeights()
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector(gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties, gov.nist.microanalysis.EPQLibrary.Detector.EDSCalibration)
+  -- Metodos declarados (48) --
+     Jama.Matrix inverseDetectorFunction()
+     [D getAccumulator()
+     [D getEfficiency()
+     boolean equals(java.lang.Object)
+     boolean isVisible(gov.nist.microanalysis.EPQLibrary.XRayTransition, double)
+     double avgEnergyForChannel(int)
+     double getChannelWidth()
+     double getQuadratic()
+     double getZeroOffset()
+     double maxEnergyForChannel(int)
+     double minEnergyForChannel(int)
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorCalibration getCalibration()
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorLineshapeModel getDetectorLineshapeModel()
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties getDetectorProperties()
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSCalibration getCalibration()
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector createDetector(gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties, gov.nist.microanalysis.EPQLibrary.Detector.EDSCalibration)
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector createMicrocal(int, double, double)
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector createPerfectDetector(int, double, [D)
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector createSDDDetector(int, double, double)
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector createSDDDetector(int, double, double, double)
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector createSiLiDetector(int, double, double)
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector readXML(java.io.File)
+     gov.nist.microanalysis.EPQLibrary.Detector.EDSDetector updateDetector(gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties, gov.nist.microanalysis.EPQLibrary.Detector.EDSCalibration)
+     gov.nist.microanalysis.EPQLibrary.Detector.ElectronProbe getOwner()
+     gov.nist.microanalysis.EPQLibrary.Detector.IXRayWindowProperties getWindow()
+     gov.nist.microanalysis.EPQLibrary.EditableSpectrum getSpectrum()
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData getRawXRayData(double)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData getSpectrum(double)
+     gov.nist.microanalysis.EPQLibrary.ISpectrumData superResolve(gov.nist.microanalysis.EPQLibrary.ISpectrumData)
+     gov.nist.microanalysis.EPQLibrary.SpectrumProperties getProperties()
+     gov.nist.microanalysis.EPQLibrary.XRayTransitionSet getVisibleTransitions(gov.nist.microanalysis.EPQLibrary.Element, double)
+     int bound(int)
+     int channelForEnergy(double)
+     int getChannelCount()
+     int hashCode()
+     java.lang.Object readResolve()
+     java.lang.String getCacheKey(gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties, gov.nist.microanalysis.EPQLibrary.Detector.EDSCalibration)
+     java.lang.String getName()
+     java.lang.String toString()
+     void actionPerformed(java.awt.event.ActionEvent)
+     void addEvent(double, double)
+     void checkSpectrumScale(gov.nist.microanalysis.EPQLibrary.ISpectrumData, double)
+     void convolve()
+     void reset()
+     void setOwner(gov.nist.microanalysis.EPQLibrary.Detector.ElectronProbe)
+     void setPosition([D)
+     void setWindow(gov.nist.microanalysis.EPQLibrary.Detector.IXRayWindowProperties)
+     void writeXML(java.io.File)
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.Detector.IXRayDetector
+==============================================================================
+  -- Constructores (0) --
+  -- Metodos declarados (6) --
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorCalibration getCalibration()
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties getDetectorProperties()
+     gov.nist.microanalysis.EPQLibrary.SpectrumProperties getProperties()
+     java.lang.String getName()
+     void addEvent(double, double)
+     void reset()
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties
+==============================================================================
+  -- Constructores (2) --
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties(gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties)
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties(gov.nist.microanalysis.EPQLibrary.Detector.ElectronProbe, java.lang.String, int, [D)
+  -- Metodos declarados (18) --
+     [D getPosition()
+     boolean equals(java.lang.Object)
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties clone()
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties getDefaultSDDProperties(gov.nist.microanalysis.EPQLibrary.Detector.ElectronProbe, java.lang.String, int)
+     gov.nist.microanalysis.EPQLibrary.Detector.DetectorProperties getDefaultSiLiProperties(gov.nist.microanalysis.EPQLibrary.Detector.ElectronProbe, java.lang.String, int)
+     gov.nist.microanalysis.EPQLibrary.Detector.ElectronProbe getOwner()
+     gov.nist.microanalysis.EPQLibrary.Detector.IXRayWindowProperties getWindow()
+     gov.nist.microanalysis.EPQLibrary.SpectrumProperties getProperties()
+     int getChannelCount()
+     int hashCode()
+     java.lang.Object clone()
+     java.lang.Object readResolve()
+     java.lang.String toString()
+     void setChannelCount(int)
+     void setName(java.lang.String)
+     void setOwner(gov.nist.microanalysis.EPQLibrary.Detector.ElectronProbe)
+     void setPosition([D)
+     void setWindow(gov.nist.microanalysis.EPQLibrary.Detector.IXRayWindowProperties)
+
+==============================================================================
+CLASE gov.nist.microanalysis.EPQLibrary.Bremsstrahlung
+==============================================================================
+  -- Constructores (1) --
+     gov.nist.microanalysis.EPQLibrary.Bremsstrahlung(gov.nist.microanalysis.EPQLibrary.Element)
+  -- Metodos declarados (11) --
+     double beta(double)
+     double findKoT(double, int)
+     double getMinXRayEnergy(double)
+     double getRandomizedEvent(double, double)
+     double parse(java.lang.String)
+     double partialSigma(double, double)
+     double sigma(double)
+     double totalEnergyLossCrossSection(double)
+     int energyIndex(double)
+     int kIndex(double)
+     void readTable()
+
+==============================================================================
+CLASES DE PRIMER NIVEL DISPONIBLES EN LOS JAR
+==============================================================================
+
+  gov.nist.microanalysis.NISTMonte
+     AffinizedShape, AnnularDetector, BSEDDepthDetector, BSEDScatterDetector, BackscatterAngleHistogram, BackscatterStats, BasicMaterialModel, BlackBodyMaterialModel, BoundedShapes, CorrugatedSurface, CylindricalShape, DiagnosticListener, Electron, EnergyLossListener, GaussianBeam, GridDetector, IAffineTransform, IMaterialScatterModel, Intersection, MeshElementRegion, MeshedRegion, MonteCarloSS, MultiPlaneShape, OverscanElectronGun, PorousBlock, ScatterStats, ShapeDifference, SimpleBlock, Sphere, SumShape, TimeListener, TrajectoryImage, TrajectoryVRML, TruncatedSphere
+
+  gov.nist.microanalysis.NISTMonte.Gen3
+     BaseXRayGeneration3, BremsstrahlungXRayGeneration3, CharacteristicXRayGeneration3, ComptonXRayGeneration3, ContinuumImage3, EmissionImage3, EmissionImageBase, FluorescenceXRayGeneration3, PhiRhoZ3, VoxelatedDetector, XRayAccumulator3, XRayTransport3
+
+  gov.nist.microanalysis.EPQLibrary
+     AbsoluteIonizationCrossSection, AbsorptionCorrection, AlgorithmClass, AlgorithmUser, Armstrong1982Base, Armstrong1982Correction, Armstrong1982ParticleCorrection, Armstrong1982ParticleMC, AtomicShell, AverageSpectrum, BackscatterCoefficient, BackscatterFactor, BadgerFilmExport, BaseSpectrum, BetheElectronEnergyLoss, Bremsstrahlung, BremsstrahlungAnalytic, BremsstrahlungAngularDistribution, BrowningEmpiricalCrossSection, CITZAF, CaveatBase, CharacteristicXRayGeneration, Composition, CompositionFromKRatios, CompositionOptimizer, ComputeZAF, ConductiveCoating, CorrectionAlgorithm, CzyzewskiMottCrossSection, CzyzewskiMottScatteringAngle, DerivedSpectrum, DuaneHuntLimit, EPMAOptimizer, EPQException, EPQFatalException, EdgeEnergy, EditableSpectrum, ElectronRange, Element, ExtremumSpectrum, FilterFit, FilteredSpectrum, FittingFilter, Fluorescence, FluorescenceYield, FluorescenceYieldMean, FromSI, Gas, GasMixture, GasScatteringCrossSection, GaussianSumSpectrum, ISpectrumData, ISpectrumTransformation, ITransform, IonizationCrossSection, IonizationDepthRatio, IterationAlgorithm, JumpRatio, KRatioSet, LenardCoefficient, LinearSpectrumFit, LitReference, MACCache, MLLSQSignature, MajorMinorTrace, MapImage, MassAbsorptionCoefficient, Material, MaterialFactory, MeanIonizationPotential, MicrocalSpectrumFitter, MuCal, MultiSpectrumMetrics, NISTMottScatteringAngle, NISTXRayTransitionDB, NoisySpectrum, Oxidizer, PAP1991, PandPDatabase, ParticleSignature, PeakROISearch, PeakStripping, PhysicalConstants, ProportionalIonizationCrossSection, QuantificationOptimizer, QuantificationOptimizer2, QuantificationOutline, QuantificationPlan, QuantifyUsingSTEMinSEM, QuantifyUsingStandards, QuantifyUsingZetaFactors, ROISpectrum, ROISpectrumNaive, RandomizedScatter, RandomizedScatterFactory, RegionOfInterestSet, Riveros1993, STEMinSEMCorrection, SamplePreparation, SampleShape, ScreenedRutherfordScatteringAngle, SpectrumFitResult, SpectrumFitter8, SpectrumMath, SpectrumProperties, SpectrumSimulator, SpectrumSmoothing, SpectrumUtils, StageCoordinate, StandardBundle, StandardsDatabase2, StoppingPower, Strategy, SurfaceIonization, ToSI, TransitionEnergy, TransitionProbabilities, VariableWidthFittingFilter, VectorSet, XPP1989Ext, XPP1991, XRayTransition, XRayTransitionSet, ZetaFactor
+
+  gov.nist.microanalysis.EPQLibrary.Detector
+     BasicSiLiLineshape, DetectorCalibration, DetectorLineshapeModel, DetectorProperties, EDSCalibration, EDSDetector, ElectronProbe, FanoSiLiLineshape, GridMountedWindow, IXRayDetector, IXRayWindowProperties, MeasuredCalibration, MicrocalCalibration, SDDCalibration, SiLiCalibration, XRayWindow, XRayWindow2, XRayWindow3, XRayWindowFactory
+
+==============================================================================
+PRUEBAS DE OPERACION (instanciacion real)
+==============================================================================
+  [OK]    ToSI.keV(30.0)                                           -> 4.8065295900000005e-15
+  [OK]    ToSI.gPerCC(8.96)                                        -> 8960.0
+  [OK]    ToSI.eV(1.0)                                             -> 1.60217653e-19
+  [OK]    Element.Cu                                               -> <java object 'gov.nist.microanalysis.EPQLibrary.Element'>
+  [OK]    Composition([Cu],[1.0])                                  -> <java object 'gov.nist.microanalysis.EPQLibrary.Composition'>
+  [OK]    Material(Composition([Cu]), 8.96 g/cc)                   -> <java object 'gov.nist.microanalysis.EPQLibrary.Material'>
+  [OK]    BasicMaterialModel(mat)                                  -> <java object 'gov.nist.microanalysis.NISTMonte.BasicMaterialModel'>
+  [OK]    GaussianBeam(1.0e-9)                                     -> <java object 'gov.nist.microanalysis.NISTMonte.GaussianBeam'>
+  [OK]    MonteCarloSS()                                           -> <java object 'gov.nist.microanalysis.NISTMonte.MonteCarloSS'>
+  [OK]    mc.setBeamEnergy(ToSI.keV(30))                           -> None
+  [OK]    mc.setElectronGun(GaussianBeam)                          -> None
+  [OK]    mc.getChamber()                                          -> <java object 'gov.nist.microanalysis.NISTMonte.MonteCarloSS.Region'>
+  [OK]    mc.getChamber().getSubRegions()                          -> <java object 'java.util.Collections.UnmodifiableRandomAccessList'>
+  [FALLA] MultiPlaneShape.createSubstrate([0,0,-1], 1e-3)          -> TypeError: No matching overloads found for *static* gov.nist.microanalysis.NISTMonte.MultiPlaneShape.createSubstrate(double[],float), options are:
+	public static gov.nist.microanalysis.NISTMonte.MultiPlaneShape gov.nist.microanalysis.NISTMonte.MultiPlaneShape.createSubstrate(double[],double[])
+

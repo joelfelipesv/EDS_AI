@@ -21,6 +21,7 @@ Requisitos:
 """
 
 import os
+import sys
 
 import gov.nist.microanalysis.EPQLibrary as epq
 import gov.nist.microanalysis.dtsa2 as dtsa2
@@ -41,13 +42,17 @@ DETECTOR_NAME = "Generico"
 # Lista de elementos puros a simular (simbolos quimicos validos en EPQ).
 ELEMENTS = ["Fe", "Cu", "Si", "Au", "Ti", "Al", "Zn"]
 
+# Obtener el directorio del script actual (funciona en Jython)
+if hasattr(sys, 'argv') and sys.argv[0]:
+    script_dir = os.path.dirname(sys.argv[0])
+else:
+    # Fallback a directorio de trabajo actual
+    script_dir = os.getcwd()
+
 # Directorio de salida: <proyecto>/data/raw/
-RAW_OUTPUT_DIR = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)),
-    "..",
-    "data",
-    "raw",
-)
+# Suponemos que el script está en jython/, por lo que subimos un nivel.
+PROJECT_ROOT = os.path.dirname(script_dir)
+RAW_OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "raw")
 
 
 def get_detector(name):
@@ -154,7 +159,10 @@ def save_spectrum_csv(spectrum, element_symbol, e0_kv, output_dir):
     Returns:
         str: Ruta absoluta del archivo CSV generado.
     """
-    os.makedirs(output_dir, exist_ok=True)
+    # Crear directorio si no existe (compatible con Python 2)
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
     filename = "%s_%dkV.csv" % (element_symbol, int(round(e0_kv)))
     path = os.path.join(output_dir, filename)
 

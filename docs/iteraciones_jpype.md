@@ -51,7 +51,7 @@ inferirlas de la documentacion (que suele estar desactualizada).
 - `EDSDetector`, `DetectorProperties`
 - `Composition`, `Material`, `Element`
 
-Salida: `src/data/inspect_api_output.txt` (47 KB).
+Salida: `docs/inspect_api_output.txt` (47 KB; el script `src/data/inspect_api_jpype.py` lo regenera por defecto en `src/data/`).
 
 ### Hallazgos clave
 
