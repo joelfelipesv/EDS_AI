@@ -1,0 +1,254 @@
+{
+  "descripcion": "Espectros EDS de bremsstrahlung puro (sin picos caracteristicos ni fluorescencia) simulados con NIST EPQ mediante JPype.",
+  "entorno": {
+    "dtsa2_home": "C:\\Users\\USUARIO\\AppData\\Local\\NIST\\NIST DTSA-II Polaris 2026-06-24",
+    "jvm_dll": "C:\\Users\\USUARIO\\AppData\\Local\\NIST\\NIST DTSA-II Polaris 2026-06-24\\java-runtime\\bin\\server\\jvm.dll",
+    "epq_jar": "C:\\Users\\USUARIO\\AppData\\Local\\NIST\\NIST DTSA-II Polaris 2026-06-24\\epq-15.1.50.jar",
+    "jpype": "1.7.1",
+    "python": "3.13.14"
+  },
+  "configuracion": {
+    "modo": "emitido",
+    "e0_keV": 30.0,
+    "n_traj": 2000,
+    "angulo_salida_deg": 40.0,
+    "dosis_na_s": 60.0,
+    "canales": 4096,
+    "ancho_canal_ev": 10.0,
+    "generador_rayos_x": "BremsstrahlungXRayGeneration3",
+    "resolucion_ev": 130.0,
+    "gun_width_m": 1e-09,
+    "materiales": [
+      "C",
+      "Al",
+      "Si",
+      "Cu",
+      "Ge",
+      "Au"
+    ]
+  },
+  "espectros": [
+    {
+      "archivo": "C_emitido_30kV.csv",
+      "material": "C",
+      "elementos": [
+        "C"
+      ],
+      "fracciones": [
+        1.0
+      ],
+      "densidad_g_cm3": 2.26,
+      "tipo": "bremsstrahlung_only",
+      "with_poisson": false,
+      "semilla": null,
+      "modo": "emitido",
+      "posicion_explicita": false,
+      "posicion_detector_m": [
+        0.0765278398675859,
+        0.0,
+        -0.06421448220768528
+      ],
+      "distancia_detector_m": 0.0999,
+      "ruta_eventos": "BremsstrahlungXRayGeneration3 -> XRayTransport3 -> EDSDetector",
+      "segundos": 2.5199410915374756,
+      "zero_offset_ev": 0.0,
+      "ancho_canal_ev": 10.0,
+      "canales": 4096,
+      "n_traj": 2000,
+      "e0_keV": 30.0,
+      "dosis_na_s": 60.0,
+      "electrones_dosis": 374490544467.6458,
+      "escala_cuentas": 187245272.2338229,
+      "total_cuentas": 23874.872562655877,
+      "canal_maximo": 25,
+      "energia_maxima_keV": 0.25,
+      "canales_no_nulos": 3049,
+      "exceso_linea_base": 3.8384250724507174
+    },
+    {
+      "archivo": "Al_emitido_30kV.csv",
+      "material": "Al",
+      "elementos": [
+        "Al"
+      ],
+      "fracciones": [
+        1.0
+      ],
+      "densidad_g_cm3": 2.7,
+      "tipo": "bremsstrahlung_only",
+      "with_poisson": false,
+      "semilla": null,
+      "modo": "emitido",
+      "posicion_explicita": false,
+      "posicion_detector_m": [
+        0.0765278398675859,
+        0.0,
+        -0.06421448220768528
+      ],
+      "distancia_detector_m": 0.0999,
+      "ruta_eventos": "BremsstrahlungXRayGeneration3 -> XRayTransport3 -> EDSDetector",
+      "segundos": 3.3460659980773926,
+      "zero_offset_ev": 0.0,
+      "ancho_canal_ev": 10.0,
+      "canales": 4096,
+      "n_traj": 2000,
+      "e0_keV": 30.0,
+      "dosis_na_s": 60.0,
+      "electrones_dosis": 374490544467.6458,
+      "escala_cuentas": 187245272.2338229,
+      "total_cuentas": 48599.958163966585,
+      "canal_maximo": 146,
+      "energia_maxima_keV": 1.46,
+      "canales_no_nulos": 3044,
+      "exceso_linea_base": 1.471614636917223
+    },
+    {
+      "archivo": "Si_emitido_30kV.csv",
+      "material": "Si",
+      "elementos": [
+        "Si"
+      ],
+      "fracciones": [
+        1.0
+      ],
+      "densidad_g_cm3": 2.33,
+      "tipo": "bremsstrahlung_only",
+      "with_poisson": false,
+      "semilla": null,
+      "modo": "emitido",
+      "posicion_explicita": false,
+      "posicion_detector_m": [
+        0.0765278398675859,
+        0.0,
+        -0.06421448220768528
+      ],
+      "distancia_detector_m": 0.0999,
+      "ruta_eventos": "BremsstrahlungXRayGeneration3 -> XRayTransport3 -> EDSDetector",
+      "segundos": 3.437727451324463,
+      "zero_offset_ev": 0.0,
+      "ancho_canal_ev": 10.0,
+      "canales": 4096,
+      "n_traj": 2000,
+      "e0_keV": 30.0,
+      "dosis_na_s": 60.0,
+      "electrones_dosis": 374490544467.6458,
+      "escala_cuentas": 187245272.2338229,
+      "total_cuentas": 52417.04598501494,
+      "canal_maximo": 152,
+      "energia_maxima_keV": 1.52,
+      "canales_no_nulos": 3046,
+      "exceso_linea_base": 1.398388628385967
+    },
+    {
+      "archivo": "Cu_emitido_30kV.csv",
+      "material": "Cu",
+      "elementos": [
+        "Cu"
+      ],
+      "fracciones": [
+        1.0
+      ],
+      "densidad_g_cm3": 8.96,
+      "tipo": "bremsstrahlung_only",
+      "with_poisson": false,
+      "semilla": null,
+      "modo": "emitido",
+      "posicion_explicita": false,
+      "posicion_detector_m": [
+        0.0765278398675859,
+        0.0,
+        -0.06421448220768528
+      ],
+      "distancia_detector_m": 0.0999,
+      "ruta_eventos": "BremsstrahlungXRayGeneration3 -> XRayTransport3 -> EDSDetector",
+      "segundos": 3.031100034713745,
+      "zero_offset_ev": 0.0,
+      "ancho_canal_ev": 10.0,
+      "canales": 4096,
+      "n_traj": 2000,
+      "e0_keV": 30.0,
+      "dosis_na_s": 60.0,
+      "electrones_dosis": 374490544467.6458,
+      "escala_cuentas": 187245272.2338229,
+      "total_cuentas": 91451.5856322113,
+      "canal_maximo": 87,
+      "energia_maxima_keV": 0.87,
+      "canales_no_nulos": 3047,
+      "exceso_linea_base": 1.7218106198374126
+    },
+    {
+      "archivo": "Ge_emitido_30kV.csv",
+      "material": "Ge",
+      "elementos": [
+        "Ge"
+      ],
+      "fracciones": [
+        1.0
+      ],
+      "densidad_g_cm3": 5.323,
+      "tipo": "bremsstrahlung_only",
+      "with_poisson": false,
+      "semilla": null,
+      "modo": "emitido",
+      "posicion_explicita": false,
+      "posicion_detector_m": [
+        0.0765278398675859,
+        0.0,
+        -0.06421448220768528
+      ],
+      "distancia_detector_m": 0.0999,
+      "ruta_eventos": "BremsstrahlungXRayGeneration3 -> XRayTransport3 -> EDSDetector",
+      "segundos": 3.357804298400879,
+      "zero_offset_ev": 0.0,
+      "ancho_canal_ev": 10.0,
+      "canales": 4096,
+      "n_traj": 2000,
+      "e0_keV": 30.0,
+      "dosis_na_s": 60.0,
+      "electrones_dosis": 374490544467.6458,
+      "escala_cuentas": 187245272.2338229,
+      "total_cuentas": 97106.66751497431,
+      "canal_maximo": 114,
+      "energia_maxima_keV": 1.14,
+      "canales_no_nulos": 3048,
+      "exceso_linea_base": 1.5796460855652925
+    },
+    {
+      "archivo": "Au_emitido_30kV.csv",
+      "material": "Au",
+      "elementos": [
+        "Au"
+      ],
+      "fracciones": [
+        1.0
+      ],
+      "densidad_g_cm3": 19.3,
+      "tipo": "bremsstrahlung_only",
+      "with_poisson": false,
+      "semilla": null,
+      "modo": "emitido",
+      "posicion_explicita": false,
+      "posicion_detector_m": [
+        0.0765278398675859,
+        0.0,
+        -0.06421448220768528
+      ],
+      "distancia_detector_m": 0.0999,
+      "ruta_eventos": "BremsstrahlungXRayGeneration3 -> XRayTransport3 -> EDSDetector",
+      "segundos": 3.1583526134490967,
+      "zero_offset_ev": 0.0,
+      "ancho_canal_ev": 10.0,
+      "canales": 4096,
+      "n_traj": 2000,
+      "e0_keV": 30.0,
+      "dosis_na_s": 60.0,
+      "electrones_dosis": 374490544467.6458,
+      "escala_cuentas": 187245272.2338229,
+      "total_cuentas": 163837.23130240897,
+      "canal_maximo": 13,
+      "energia_maxima_keV": 0.13,
+      "canales_no_nulos": 3046,
+      "exceso_linea_base": 1.2702705256453386
+    }
+  ]
+}

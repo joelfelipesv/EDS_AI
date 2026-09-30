@@ -92,3 +92,13 @@ The project is organized as follows (see the detailed layout in the index). It's
 
 ---
 *This README will be updated as the project phases move forward.*
+
+## Fase 1 completada
+
+La primera fase ya cuenta con un corpus reproducible de seis elementos puros — C, Al, Si, Cu, Ge y Au — generado directamente con EPQ + JPype, sin consola DTSA-II ni Jython. Cada espectro usa E0 = 30 kV, 2000 trayectorias, modo emitido (transporte y eficiencia del detector) y resolución SDD de 130 eV. El corpus se validó contra el corte Duane-Hunt y la trazabilidad confirma que la única fuente de rayos X es `BremsstrahlungXRayGeneration3`, sin generación característica ni fluorescencia.
+
+El preprocesado extrae los 4096 canales, aplica normalización L1 y crea los vectores canónicos `.npy`. Para hacer posible una evaluación estratificada —un único espectro por clase no permite separar train/test— se generaron diez realizaciones Poisson reproducibles por clase en cada nivel de dosis: low (0.1×), mid (1×) y high (10×). Los mapas de etiquetas conservan `C=0, Al=1, Si=2, Cu=3, Ge=4, Au=5`.
+
+Se entrenaron un Random Forest de 200 árboles y una CNN 1D de dos bloques convolucionales. En el test actual, RF alcanzó 1.0000 de accuracy en las tres dosis; la CNN alcanzó 0.6667, 0.8333 y 0.6667 para low, mid y high, respectivamente. PyTorch se ejecutó en CPU porque la build instalada fue `2.14.0+cpu` y `torch.cuda.is_available()` devolvió `False`.
+
+Los comandos reproducibles, las métricas completas, la discusión metodológica y las rutas de todos los artefactos están en [el resumen de Fase 1](reports/fase1_resumen.md). Los informes, gráficas y modelos se guardan en `reports/` y `models/`; las incidencias y sus correcciones están registradas en `docs/iteraciones_fase1.md`.
